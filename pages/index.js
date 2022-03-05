@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Banner from '../comps/Banner'
-import Header from '../comps/Header'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Banner from "../comps/Banner";
+import Header from "../comps/Header";
+import LocCard from "../comps/LocCard";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ items }) {
   return (
     <div>
       <Head>
@@ -16,8 +17,31 @@ export default function Home() {
       {/* banner */}
       <Banner />
 
-
-     
+      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+        <section className="pt-6">
+          <h2 className="text-4xl font-semibold pb-5">Explore More</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {items?.map((item) => (
+              <LocCard
+                key={item.index}
+                img={item.img}
+                loc={item.location}
+                dist={item.distance}
+              />
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
-  )
+  );
+}
+export async function getStaticProps() {
+  const items = await fetch("https://links.papareact.com/pyp").then((res) =>
+    res.json()
+  );
+  return {
+    props: {
+      items: items,
+    },
+  };
 }
