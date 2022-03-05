@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Banner from '../comps/Banner'
 import Header from '../comps/Header'
 import styles from '../styles/Home.module.css'
 
@@ -13,6 +14,7 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* banner */}
+      <Banner />
 
 
      
