@@ -4,7 +4,7 @@ import {GlobeAltIcon, MenuAlt1Icon, MenuIcon, SearchIcon, UserCircleIcon} from "
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-5 grid md: grid-cols-3 bg-white shadow-md p-5 md:px-10 ">
+    <header className="sticky top-0 z-[50] grid md: grid-cols-3 bg-white shadow-md p-5 md:px-10 ">
       <div className="relative flex items-center h-10 w-30 cursor-pointer my-auto">
         <Image src="https://links.papareact.com/qd3" 
         alt="logo"

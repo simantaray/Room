@@ -4,6 +4,7 @@ import Banner from "../comps/Banner";
 import Header from "../comps/Header";
 import LocCard from "../comps/LocCard";
 import LivCard from "../comps/LivCard";
+import LargeCard from "../comps/LargeCard";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ items, cards }) {
@@ -40,6 +41,12 @@ export default function Home({ items, cards }) {
             ))}
           </div>
         </section>
+        <LargeCard
+            img="https://links.papareact.com/4cj"
+            title="The Greatest Outdoors"
+            description="Wishlists curated by Airbnb."
+            buttonText="Get Inspired"
+          />
       </main>
     </div>
   );
