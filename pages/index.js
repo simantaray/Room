@@ -5,6 +5,7 @@ import Header from "../comps/Header";
 import LocCard from "../comps/LocCard";
 import LivCard from "../comps/LivCard";
 import LargeCard from "../comps/LargeCard";
+import Footer  from "../comps/Footer";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ items, cards }) {
@@ -43,11 +44,11 @@ export default function Home({ items, cards }) {
         </section>
         <LargeCard
             img="https://links.papareact.com/4cj"
-            title="The Greatest Outdoors"
-            description="Wishlists curated by Airbnb."
-            buttonText="Get Inspired"
+            title="Things to do on your trip"
+            buttonText="Experiences"
           />
       </main>
+      <Footer />
     </div>
   );
 }

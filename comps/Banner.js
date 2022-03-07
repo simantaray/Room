@@ -10,9 +10,9 @@ export default function Banner() {
         layout="fill"
         objectFit="cover"
         />
-        <div className='absolute w-full top-1/2 text-center'>
-            <p className='text-sm sm:text-lg'>Not sure where to go? Perfect</p>
-            <button className='text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold hover:shadow-xl active:scale-90 transition duration-100 cursor-pointer'>I'm Flexible</button>
+        <div className='absolute w-full top-1/3 text-center'>
+            <p className='text-2xl font-bold mb-5 md:text-4xl'>Let your curiosity do the booking</p>
+            <button className='text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold hover:shadow-xl active:scale-90 transition duration-100 cursor-pointer'> I`m Flexible</button>
         </div>
     </div>
   )
