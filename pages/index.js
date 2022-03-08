@@ -6,6 +6,7 @@ import LocCard from "../comps/LocCard";
 import LivCard from "../comps/LivCard";
 import LargeCard from "../comps/LargeCard";
 import Footer  from "../comps/Footer";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home({ items, cards }) {
@@ -17,6 +18,7 @@ export default function Home({ items, cards }) {
       </Head>
       {/* header */}
       <Header />
+     
       {/* banner */}
       <Banner />
 
