@@ -30,15 +30,15 @@ import Link from 'next/link';export default function Header() {
                 objectPosition="left"
                 />
         </div>
-        <div className=' relative md:inline'>
-            <div className={`hidden md:flex ${ animateHeader && "md:hidden"} trasition ease-in-out duration-5`}>
-                <h1 className='px-10 py-2'>hi</h1>
-                <h1 className='px-10 py-2'>holla</h1>
-                <h1 className='px-10 py-2'>lola</h1>
+        <div className='relative md:m-[-10px] md:inline'>
+            <div className={`hidden text-sm text-center md:grid xl:text-lg grid-cols-3 ${ animateHeader && "md:hidden opacity-0 mt-[-100px] "} trasition ease-in-out duration-5`}>
+                <h1 className='py-2'>Place to stay</h1>
+                <h1 className='py-2'>Experiences</h1>
+                <h1 className='py-2'>Online Experiences</h1>
             </div>
             
-            <div className={`mt-[-20px] absolute md:mt-2.5 mr-auto ml-auto left-0 right-0 flex items-center border-2 rounded-full py-1 bg-white scale-100 md:scale-125 ${animateHeader && "md:scale-100 md:mt-[-20px] trasition ease-in-out duration-500"}`}>
-                <input className="w-[110px] flex-grow pl-5 bg-transparent outline-none text-gray-700 placeholder-gray-700" type="text" placeholder="Search Place" />
+            <div className={`mt-[-30px] absolute md:mt-5 mr-auto ml-auto left-0 right-0 flex items-center border-2 rounded-full py-1 bg-white scale-100 md:scale-125 ${animateHeader && "md:scale-100 md:mt-[-22px] trasition ease-in-out duration-200"} trasition ease-in-out duration-200`}>
+                <input className="w-[110px] flex-grow pl-5 bg-transparent outline-none text-gray-700 placeholder-gray-700 tracking-wide" type="text" placeholder="Search Place" />
                 <SearchIcon className="inline-flex  mr-1 h-9 bg-red-400 rounded-full p-2 text-white cursor-pointer right-0"/>
             </div>
         </div>
