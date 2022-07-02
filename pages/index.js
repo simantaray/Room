@@ -22,7 +22,7 @@ export default function Home({ items, cards }) {
       {/* banner */}
       <Banner />
 
-      <main className="max-w-7xl mx-auto px-8 sm:px-16 ">
+      <main className="max-w-7xl mx-auto px-8 sm:px-16 bg-white xl:bg-neutral-50 pb-14 pt-8 rounded-lg ">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore More</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
